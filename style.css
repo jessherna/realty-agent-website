@@ -1,0 +1,597 @@
+* { 
+	box-sizing: border-box;
+    padding:0;
+    margin: 0;
+}
+
+.room {
+    color: red;
+}
+
+/* Small Description */
+.description_small {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.description_small ul li {
+    width: 100px;
+}
+
+
+/* Separate Property Listings */
+.condo_gallery {
+    display: none;
+}
+.description li {
+    list-style: none;
+    padding-left: 10px;
+}
+.description dt {
+    font-size: large;
+    font-weight: bold;
+}
+
+.description dl {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.price {
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+}
+
+
+.description {
+    width: 650px;
+}
+.listing_heading {
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 300px;
+    text-align: left;
+}
+
+/* Small Gallery */
+.small_gallery h3 {
+    color: blue;
+}
+.small_gallery p {
+    font-size: 1em;
+}
+
+.gallery {
+    display:none;
+}
+
+/* Sitemap */
+.sitemap_small ul {
+    list-style: none;
+}
+
+.sitemap_big {
+    display:none;
+}
+
+/* References */
+.references {
+    list-style-type: square;
+    padding-left: 20px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.references li a {
+    text-decoration: none;
+    color: black;
+}
+.references a:hover {
+    color: #CD5B3B;
+}
+
+/* Gallery */
+
+.condo_gallery a:hover {
+    opacity: 0.5;
+}
+.description_small a:hover {
+    opacity: 0.5;
+}
+/* Form Style*/
+
+form { display: grid;
+    border: 1px solid black;
+    box-shadow: 5px 5px;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em; gap: 1em;
+    width: 100%; padding: 1.5em;}
+    label {
+        text-align: left;
+    }
+    input {
+        height: 2em;
+        text-indent: 10px;
+        font-size: 1em;
+    }
+    input[id="firstName"] {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    input[id="lastName"] {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    input[id="phone"] {
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+    input[id="email"] {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+    select[id="propertyType"] {
+        grid-column: 2/4;
+        grid-row: 5/6;
+        text-indent: 10px;
+        font-size: 1em;
+        height: 2em;
+    }
+    input[id="bedrooms"] {
+        grid-column: 2/4;
+        grid-row: 6/7; 
+    }
+    input[id="bathrooms"] {
+        grid-column: 2/4;
+        grid-row: 7/8;
+    }
+    input[id="priceRangeMin"] {
+        grid-column: 2/4;
+        grid-row: 8/9;
+    }
+    input[id="priceRangeMax"] {
+        grid-column: 2/4;
+        grid-row: 9/10;
+    }
+    textarea {
+        grid-column: 2/4;
+        grid-row: 10/11;
+    }
+    input[type="submit"] {grid-column: 2 / 3;
+        grid-row: 11/12; font-size: 1em;
+        text-indent: 0;}
+    input[type="reset"] { grid-column: 3 / 4;
+        grid-row: 11/12; font-size: 1em;
+        text-indent: 0;}
+    
+
+/* Form Style*/
+
+nav {
+    font-size: large;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 5px 0px #dedede;
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  nav ul li a:hover {
+    color: rgb(85, 85, 85);
+  }
+  
+  
+  /* stroke */
+  nav.stroke ul li a,
+  nav.fill ul li a {
+    position: relative;
+  }
+  nav.stroke ul li a:after,
+  nav.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+  
+  nav.fill ul li a {
+    transition: all 2s;
+  }
+  
+  nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  nav.fill ul li a:hover {
+    color: white;
+    z-index: 1;
+  }
+nav.shift ul li a {
+    position:relative;
+    z-index: 1;
+    color: white;
+  }
+  nav.shift ul li a:hover {
+    color: #91640F;
+  }
+  nav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background-color: #F1C40F;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  
+body {
+    padding: 20px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#wrapper {
+	background-color: #CACED8;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+header {
+    display:block;
+    padding: 0px;
+    margin: 0;
+}
+.banner img {
+    width: 100%;
+    height: 350px;
+    margin: 0;
+}
+
+.header_text{
+    display: block;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    border: 3px solid white;
+    padding: 10px;
+    width: 250px;
+}
+
+
+.agent {
+    border: 2px solid gray;
+}
+main {   
+	background-color: #FFFFFF;
+      color: #000000;
+	padding: 1em; 
+    text-align: justify;
+}
+aside { 
+	text-align: left; 
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+figure a {
+    text-decoration: none;
+    color: black;
+}
+figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+.phone img{
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 10%;
+}
+.email img{
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 10%;
+}
+.email p {
+    margin: 10px 20px 0 20px;
+}
+.email a:hover {
+    color: #CD5B3B;
+}
+.phone p {
+    margin: 10px 20px 0 20px;
+}
+.phone a:hover {
+    color: #CD5B3B;
+}
+footer {
+	background-color: #7E6D66;
+	font-size: 80%;
+	text-align: center;
+	padding: 0.5em 0;
+	color: white;
+}
+.reviewer {
+    font-weight: bold;
+}
+.royale img {
+    width: 300px;
+    height: auto;
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #CD5B3B;
+    margin: 0;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-align: left;
+}
+p {
+    font-size: 110%;
+}
+.floatRight{
+	float:right;
+	margin-left:6px;
+	
+}
+p img {
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+}
+
+/* Styles to configure navigation links as horizontal areas */
+nav {
+    background-color: #9BB3C2;
+    margin: 0;
+}
+nav ul { 
+	list-style-type: none;
+      padding-left: 0; 
+      
+}
+nav li { 
+      text-align: center;
+	padding-top: .5em;
+	padding-bottom: .5em;
+    
+}
+nav a { 
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* make the current page's link look different */
+nav #page { 
+	font-weight: bold;
+      color: #FEFEFE; 
+}
+
+/* Force older versions of Internet Explorer to display these HTML5 elements with block display. */
+header, nav, main, footer, aside, figure { 
+	display: block; 
+}
+
+/* Medium Display */
+@media (min-width: 600px) {
+    .header_text {
+        top: 50%;
+    }
+    .banner img {
+        height: 450px;
+    }
+
+}
+
+/* Large Display */
+@media (min-width: 1024px){
+
+    /* Sitemap */
+.sitemap_small ul {
+    display:none;
+}
+
+.sitemap_big {
+    display:block;
+}
+
+    /* Separate Property Listings */
+
+.description li {
+    list-style: none;
+    padding-left: 10px;
+}
+.description dt {
+    font-size: large;
+    font-weight: bold;
+}
+.condo_gallery {
+    display: block;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    position: absolute;
+ }
+.description dl {
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-left: 280px;
+}
+.description_small {
+    display: none;
+}
+
+.price {
+    font-size: 24px;
+    color: blue;
+    font-weight: bold;
+}
+
+.description {
+    width: 650px;
+}
+.listing_heading {
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+        /*Property Listings*/
+        .small_gallery {
+            display:none;
+        }
+        .gallery {
+            display:block;
+        }
+        .gallery {
+            height: 700px;
+        }
+        .gallery h3 {
+            margin-left: 10px;
+        }
+        .gallery p {
+            width: 450px;
+            background-color: white;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .gallery span img {
+            width: 450px;
+            height: auto;
+        }
+        .gallery img {
+            width: 150px;
+        }
+    
+        .gallery ul {list-style: none;
+            width: 300px;
+        }
+        .gallery li {display:inline;}
+        .gallery span {display: none;}
+    .gallery {
+        width: 600px;
+    }
+    .gallery a:hover span {
+        display: block;
+        position: absolute;
+        top: 59%;
+        left: 36%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    span {
+        background-color: white;
+    }
+
+
+.banner {
+    display: block;
+}
+.header_text{
+    top: 20%;
+    font-size: 2em;
+    width: 400px;
+}
+
+nav ul { 
+    border-top: none;
+	display: flex; 
+	flex-direction: column; 
+	flex-wrap: nowrap; 
+}
+
+#wrapper { 
+    box-shadow: 10px 10px #e0e0e0;
+    margin: auto; 
+    max-width: 1200px; 
+    display: grid; 
+	grid-template-columns: 150px auto auto;
+	grid-template-rows: auto auto auto ; 
+}
+header { 
+	grid-row: 1 / 2; 
+	grid-column: 1 / 4; 
+}
+nav    { 
+	grid-row: 2 / 3; 
+	grid-column: 1 / 2; 
+}
+main   { 
+	grid-row: 2 / 3; 
+	grid-column: 2 / 3; 
+}
+aside  { 
+grid-row: 2 / 3; 
+grid-column: 3 / 4; 
+}
+footer { 
+	grid-row: 3 / 4; 
+	grid-column: 1 / 4; 
+}
+
+					} 
+	 
+
+.floatRight {
+	float: right;
+}
+	 
+
+.clearBoth {
+	clear: both;
+}
+	 
+

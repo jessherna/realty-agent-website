@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>This Realty Company</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style>
+
+
+</style> 
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+  <header>
+    <div class = "banner"><img src="images/banner.jpeg"></div>
+	<div class="header_text">LET US HELP YOU <br> LIVE THE LIFE <br> YOU WANT</div>
+  </header>
+	<nav class="shift">
+    <ul>
+    <li><a href = "index.html">Home</a> </li>
+    <li><a href = "properties.html">Properties</a> </li>
+    <li><a href = "contact.html">Contact</a> </li>
+    <li><a href = "sitemap.html">Sitemap</a> </li>
+    </ul>
+	</nav>
+  <main>
+ 	<h2><span lang="en-ca">Contact Us</span></h2><br>
+    <form action= "mailto:jherna80@my.centennialcollege.ca" method="post" enctype="text/plain">
+            <label for="firstName">First Name:</label>
+            <input type ="text" class="firstName" id="firstName" name="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type ="text" class="lastName" id="lastName" name="lastName" required>
+            <label for="phone">Phone:</label>
+            <input type ="tel" class="phone" id="phone" name="phone">
+            <label for="email">Email:</label>
+            <input type ="email" class="email" id="email" name="email" required>
+            <label for="propertyType">Property Type:</label>
+            <select id="propertyType" name="propertyType" required>
+                <option value="House">House</option>
+                <option value="Condominium">Condominium</option>
+            </select>
+            <label for="bedrooms">No. of Bedrooms:</label>
+            <input type ="number" class="bedrooms" id="bedrooms" min="1" max="5" name="bedrooms" required>
+            <label for="bathrooms">No. of Bathrooms:</label>
+            <input type ="number" class="bathrooms" id="bathrooms" min="1" max="3" name="bathrooms" required>
+            <label for="priceRangeMin">Price Range (Min):</label>
+            <input type ="number" class="priceRangeMin" id="priceRangeMin" min="0" max="100000000" name="priceRangeMin">
+            <label for="priceRangeMax">Price Range (Max):</label>
+            <input type ="number" class="priceRangeMax" id="priceRangeMax" min="0" max="100000000" name="priceRangeMax">
+            <label for="comments">Comments:</label>
+            <textarea name="comments" rows="4" cols=auto></textarea>
+            <input type="submit" id="submit" name="submit">
+            <input type="reset" id="reset" name="reset"> 
+    </form>
+  </main>
+   <aside>
+    <figure>
+	
+    <img class ="agent" src="images/AgentPic.jpg" width="300" height="400" alt=""><br>
+	<div class="email">
+		<img src="images/email.png"><p>EMAIL<br><a href="mailto:arai@anupRaiRE.ca">ARAI@ANUPRAIRE.CA</a></p>
+	</div><br>
+	<div class ="phone">
+		<img src="images/phone.png"><p>PHONE NUMBER<br><a href="tel:416-123-4567">(416) 123-4567</a></p>
+	</div><br>
+	<div class="royale"><img src="images/rlpage_logo.png"></div><br>
+	
+    </figure>
+  </aside> 
+  <footer>
+	&copy; Copyright 2022: This Realty Company
+  </footer>
+ </div>
+</body>
+</html>
+
+
